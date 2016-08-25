@@ -3,6 +3,20 @@
 > Cristian Fabricio Rodriguez Romero
 > 20101020078
 
+# INSTALACION
+
+Para la instalacion del proyecto se puede clonar con el comando
+
+```
+git clone https://github.com/fab48/zoologico.git
+```
+
+o se puede descargar el zip de la opcion ** _clone or download_ **
+
+Este es un proyecto de Netbeans con aplicacion web de JSP, por lo que es necesario tener instalado un servidor local(Apache o GlassFish). Ante cualquier duda de la instalacion de las herramientas seguir el siguiente enlace: https://docs.oracle.com/cd/E19798-01/821-1770/gioew/
+
+# EXPLICACION
+
 Este proyecto muestra la aplicación de los principios SOLID.
 
 ![alt tag](https://raw.githubusercontent.com/fab48/zoologico/master/Modelo%20uml.png)
