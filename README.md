@@ -5,4 +5,4 @@
 
 Este proyecto muestra la aplicación de los principios SOLID.
 
-[[https://github.com/fab48/zoologico/blob/master/Modelo%20uml.png|alt=modelo]]
+[[https://raw.githubusercontent.com/fab48/zoologico/master/Modelo%20uml.png|alt=modelo]]
