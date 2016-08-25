@@ -23,5 +23,5 @@ public class Pez extends Animal implements InterfacePez{
     public String nadar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+   
 }

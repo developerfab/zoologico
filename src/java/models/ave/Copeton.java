@@ -9,17 +9,20 @@ package models.ave;
  *
  * @author fabricio
  */
-public class Copeton extends Ave implements InterfaceAve{
+public class Copeton extends Ave{
     
     //CONSTRUCTOR
-    public Copeton(){
-        
-    }
-
-    //METODOS
-    @Override
-    public String volar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Copeton(String nombre){
+        this.nombre = nombre;
+        this.especie = "Copeton";
+        this.tipo = "Ave";
+        this.altura = "4 m";
     }
     
+    //METODOS
+    
+    @Override
+    public String alturaVuelo() {
+        return this.altura;
+    }
 }

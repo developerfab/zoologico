@@ -13,9 +13,13 @@ import models.Animal;
  */
 public class Reptil extends Animal {
     
+    protected String tipo = "Reptil";
+    
     //CONSTRUCTOR
     public Reptil(){
         
     }
+    
+    //METODOS
     
 }

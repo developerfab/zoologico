@@ -13,12 +13,10 @@ import models.Animal;
  */
 public class Mamifero extends Animal {
     
-    //ATRIBUTOS
-    protected String nombre;
     
     //CONSTRUCTOR
     public Mamifero(){
         
     }
-    
+
 }

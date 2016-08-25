@@ -11,6 +11,6 @@ package models.ave;
  */
 public interface InterfaceAve {
     
-    public String volar();
+    public String alturaVuelo();
     
 }

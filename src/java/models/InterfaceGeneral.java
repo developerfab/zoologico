@@ -15,4 +15,5 @@ public interface InterfaceGeneral {
     
     public String dormir();
     
+    
 }

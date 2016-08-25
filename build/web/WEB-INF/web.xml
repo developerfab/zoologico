@@ -17,6 +17,10 @@
         <servlet-name>VerLista</servlet-name>
         <servlet-class>controllers.VerLista</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AveController</servlet-name>
+        <servlet-class>controllers.AveController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
@@ -28,6 +32,10 @@
     <servlet-mapping>
         <servlet-name>VerLista</servlet-name>
         <url-pattern>/VerLista</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AveController</servlet-name>
+        <url-pattern>/AveController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

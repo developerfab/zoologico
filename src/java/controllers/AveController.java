@@ -7,21 +7,19 @@ package controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.URLEncoder;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import models.ListaAnimales;
-import models.mamifero.Ballena;
-import models.mamifero.Gato;
-import models.mamifero.Perro;
+import models.ave.Copeton;
+import models.ave.Pinguino;
 
 /**
  *
  * @author fabricio
  */
-public class MamiferoController extends HttpServlet {
+public class AveController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,20 +34,17 @@ public class MamiferoController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
             String tipo = request.getParameter("tipo");
             String nombre = request.getParameter("nombre");
-            if (tipo.equals("ballena")){
-                crearBallena(nombre);
-            }else if(tipo.equals("gato")){
-                crearGato(nombre);
-            }else if(tipo.equals("perro")){
-                crearPerro(nombre);
+            if (tipo.equals("copeton")){
+                crearCopeton(nombre);
+            }else if(tipo.equals("pinguino")){
+                crearPinguino(nombre);
             }
             String msg = "Creado correctamente";
             request.setAttribute("message", msg);
-            response.sendRedirect("crear_mamifero_form.jsp");
-            /* TODO output your page here. You may use following sample code. */
-            
+            response.sendRedirect("crear_ave.jsp");
         }
     }
 
@@ -66,7 +61,7 @@ public class MamiferoController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        response.sendRedirect("crear_mamifero_form.jsp");
+        response.sendRedirect("crear_ave.jsp");
     }
 
     /**
@@ -93,22 +88,15 @@ public class MamiferoController extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
-    public void crearBallena(String nombre){
-        Ballena ballena = new Ballena(nombre);
+    public void crearCopeton(String nombre){
+        Copeton copeton = new Copeton(nombre);
         ListaAnimales lista = ListaAnimales.getListaAnimales();
-        lista.adicionar(ballena);
+        lista.adicionar(copeton);
     }
     
-    public void crearGato(String nombre){
-        Gato gato = new Gato(nombre);
+    public void crearPinguino(String nombre){
+        Pinguino pinguino = new Pinguino(nombre);
         ListaAnimales lista = ListaAnimales.getListaAnimales();
-        lista.adicionar(gato);
-        
-    }
-    
-    public void crearPerro(String nombre){
-        Perro perro = new Perro(nombre);
-        ListaAnimales lista = ListaAnimales.getListaAnimales();
-        lista.adicionar(perro);
+        lista.adicionar(pinguino);
     }
 }

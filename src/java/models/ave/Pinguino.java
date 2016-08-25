@@ -12,7 +12,15 @@ package models.ave;
 public class Pinguino extends Ave {
     
     //CONSTRUCTOR
-    public Pinguino(){
-        
+    public Pinguino(String nombre){
+        this.nombre = nombre;
+        this.especie = "Pinguino";
+        this.tipo = "Ave";
+        this.altura = "0 m";
+    }
+    
+    @Override
+    public String alturaVuelo() {
+        return this.altura;
     }
 }

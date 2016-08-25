@@ -16,6 +16,8 @@ public class Ballena extends Mamifero implements InterfacePez{
     //CONSTRUCTOR
     public Ballena(String nombre){
         this.nombre = nombre;
+        this.especie = "Ballena";
+        this.tipo = "Mamifero";
     }
 
     //METODOS

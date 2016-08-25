@@ -36,10 +36,6 @@ public class VerLista extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             ListaAnimales lista = ListaAnimales.getListaAnimales();
-            ArrayList<Animal> lista_animales = lista.getAnimales();
-            System.out.println("----------------------");
-            System.out.println(lista_animales.get(0));
-            System.out.println("----------------------");
             request.setAttribute("lista", lista);
             response.sendRedirect("ver_lista.jsp");
         }

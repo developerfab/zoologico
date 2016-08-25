@@ -14,6 +14,8 @@ public class Perro extends Mamifero {
     //CONSTRUCTOR
     public Perro(String nombre){
         this.nombre = nombre;
+        this.especie = "Perro";
+        this.tipo = "Mamifero";
     }
     
 }

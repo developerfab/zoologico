@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ListaAnimales {
     
     //ATRIBUTOS
-    private ArrayList<Animal> animales = new ArrayList<Animal>();
+    private static ArrayList<Animal> animales = new ArrayList<Animal>();
     private static ListaAnimales lista = null;
     
     //CONSTRUCTOR
